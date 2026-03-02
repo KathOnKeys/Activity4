@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/*SIDEBAR*/
+.sidebar {
+    width: 200px;
+    min-height: 100vh;
+    background-color: #333;
+    flex-shrink: 0;
+}
+
+.brand {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 4px;
+}
+
+.sidebar ul li a {
+    display: block;
+    border-bottom: 1px solid #555;
+    padding: 7px 15px;
+    color: white;
+    font-size: 13px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+.sidebar ul li a.active {
+    color: #007bff;
+}
+
+/*MAIN*/
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*CONTENT*/
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+/*EMPLOYEE TABLE*/
+.employee-section h3 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+table th,
+table td {
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+
+
+/*TEXT FORMAT*/
+.text-section {
+    margin-top: 18px;
+    font-size: 13px;
+}
+
+.text-section h4 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+.text-section p {
+    margin-bottom: 1px;
+    line-height: 1.6;
+}
+
+.text-section ol {
+    margin-top: 10px;
+    padding-left: 18px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.text-section ul {
+    padding-left: 16px;
+    list-style-type: circle;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/*PROFILE*/
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-content h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+    padding: 6px 60px;
+}
+
+.profile-content h2.profile-bio {
+    max-width: 480px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.profile-bottom {
+    display: flex;
+    gap: 40px;
+    width: 100vh;
+    max-width: 700px;
+    margin-top: 10px;
+    text-align: left;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+
+.core-belief,
+.get-in-touch {
+    flex: 1;
+    font-size: 13px;
+}
+
+.core-belief h4, 
+.get-in-touch h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.core-belief p {
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+
+.get-in-touch p {
+    font-style: italic;
+    line-height: 1.8;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 8px;
+}
